@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="886" it="0" lt="886" ct="451" ts="1562553095063" s="true" lb="HTTP获取token" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="1612" sby="287" ng="1" na="1"/>
+<httpSample t="128" it="0" lt="125" ct="0" ts="1562553095993" s="true" lb="获取管理区" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="1151" sby="1036" ng="1" na="1"/>
+<httpSample t="92" it="0" lt="92" ct="0" ts="1562553096122" s="true" lb="获取楼宇" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="1345" sby="1052" ng="1" na="1"/>
+<httpSample t="67" it="0" lt="67" ct="0" ts="1562553096215" s="true" lb="获取房间" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="1530" sby="1051" ng="1" na="1"/>
+<httpSample t="274" it="0" lt="53" ct="0" ts="1562553096283" s="false" lb="HTTP获取付款方式" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Connection reset" tn="物业app收费接口测试 1-1" dt="text" by="1748" sby="0" ng="1" na="1"/>
+<httpSample t="284" it="0" lt="284" ct="33" ts="1562553096572" s="true" lb="根据房间获取客户ID" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="876" sby="1100" ng="1" na="1"/>
+<httpSample t="224" it="0" lt="192" ct="0" ts="1562553096857" s="true" lb="HTTP获取客户的账单" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="16809" sby="1040" ng="1" na="1"/>
+<httpSample t="1684" it="0" lt="1684" ct="0" ts="1562553097082" s="true" lb="HTTP缴费本地" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="844" sby="1115" ng="1" na="1"/>
+<httpSample t="128" it="0" lt="114" ct="35" ts="1562553098767" s="false" lb="HTTP查询可用积分及可抵用金额" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Connection reset" tn="物业app收费接口测试 1-1" dt="text" by="1748" sby="0" ng="1" na="1"/>
+<httpSample t="100" it="0" lt="85" ct="34" ts="1562553098896" s="false" lb="HTTP积分查询" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Connection reset" tn="物业app收费接口测试 1-1" dt="text" by="1748" sby="0" ng="1" na="1"/>
+
+<httpSample t="1252" it="0" lt="1252" ct="71" ts="1562553100629" s="true" lb="获取token" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="1616" sby="299" ng="1" na="1"/>
+<httpSample t="456" it="0" lt="455" ct="0" ts="1562553102112" s="true" lb="get请求" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="1144" sby="1032" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="43" it="0" lt="42" ct="0" ts="1562553102630" s="true" lb="get请求" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="822" sby="1047" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="78" it="0" lt="78" ct="16" ts="1562553102678" s="true" lb="get请求" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="822" sby="1046" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="135" it="0" lt="135" ct="0" ts="1562553102766" s="false" lb="post请求" rc="409" rm="Conflict" tn="功能覆盖 1-1" dt="text" by="885" sby="1092" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="70" it="0" lt="70" ct="0" ts="1562553102904" s="false" lb="get请求" rc="404" rm="Not Found" tn="功能覆盖 1-1" dt="text" by="846" sby="1030" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="77" it="0" lt="75" ct="0" ts="1562553102980" s="false" lb="post请求" rc="405" rm="Method Not Allowed" tn="功能覆盖 1-1" dt="text" by="1054" sby="1036" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="28" it="0" lt="28" ct="0" ts="1562553103062" s="true" lb="get请求" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="1144" sby="1032" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="28" it="0" lt="28" ct="0" ts="1562553103095" s="true" lb="get请求" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="822" sby="1047" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="26" it="0" lt="26" ct="0" ts="1562553103127" s="true" lb="get请求" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="822" sby="1046" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+<httpSample t="207" it="0" lt="206" ct="95" ts="1562553276863" s="true" lb="HTTP获取token" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="1612" sby="287" ng="1" na="1"/>
+<httpSample t="63" it="0" lt="63" ct="0" ts="1562553277081" s="true" lb="获取管理区" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="1151" sby="1036" ng="1" na="1"/>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1562553277145" s="true" lb="获取楼宇" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="1345" sby="1052" ng="1" na="1"/>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1562553277203" s="true" lb="获取房间" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="1530" sby="1051" ng="1" na="1"/>
+<httpSample t="63" it="0" lt="48" ct="0" ts="1562553277255" s="false" lb="HTTP获取付款方式" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Connection reset" tn="物业app收费接口测试 1-1" dt="text" by="1748" sby="0" ng="1" na="1"/>
+<httpSample t="80" it="0" lt="80" ct="33" ts="1562553277320" s="true" lb="根据房间获取客户ID" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="876" sby="1100" ng="1" na="1"/>
+<httpSample t="85" it="0" lt="53" ct="0" ts="1562553277401" s="true" lb="HTTP获取客户的账单" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="16809" sby="1040" ng="1" na="1"/>
+<httpSample t="148" it="0" lt="148" ct="0" ts="1562553277487" s="true" lb="HTTP缴费本地" rc="200" rm="OK" tn="物业app收费接口测试 1-1" dt="text" by="844" sby="1115" ng="1" na="1"/>
+<httpSample t="65" it="0" lt="48" ct="0" ts="1562553277636" s="false" lb="HTTP查询可用积分及可抵用金额" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Connection reset" tn="物业app收费接口测试 1-1" dt="text" by="1748" sby="0" ng="1" na="1"/>
+<httpSample t="96" it="0" lt="81" ct="33" ts="1562553277703" s="false" lb="HTTP积分查询" rc="Non HTTP response code: java.net.SocketException" rm="Non HTTP response message: Connection reset" tn="物业app收费接口测试 1-1" dt="text" by="1748" sby="0" ng="1" na="1"/>
+
+<httpSample t="164" it="0" lt="164" ct="75" ts="1562553279123" s="true" lb="获取token" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="1616" sby="299" ng="1" na="1"/>
+<httpSample t="30" it="0" lt="30" ct="0" ts="1562553279397" s="true" lb="get请求" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="1144" sby="1032" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="28" it="0" lt="27" ct="0" ts="1562553279437" s="true" lb="get请求" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="822" sby="1047" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="25" it="0" lt="25" ct="0" ts="1562553279470" s="true" lb="get请求" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="822" sby="1046" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="30" it="0" lt="30" ct="0" ts="1562553279505" s="false" lb="post请求" rc="409" rm="Conflict" tn="功能覆盖 1-1" dt="text" by="885" sby="1092" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="25" it="0" lt="25" ct="0" ts="1562553279538" s="false" lb="get请求" rc="404" rm="Not Found" tn="功能覆盖 1-1" dt="text" by="846" sby="1030" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="20" it="0" lt="19" ct="0" ts="1562553279568" s="false" lb="post请求" rc="405" rm="Method Not Allowed" tn="功能覆盖 1-1" dt="text" by="1054" sby="1036" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="26" it="0" lt="25" ct="0" ts="1562553279594" s="true" lb="get请求" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="1144" sby="1032" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="26" it="0" lt="26" ct="0" ts="1562553279625" s="true" lb="get请求" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="822" sby="1047" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="23" it="0" lt="23" ct="0" ts="1562553279654" s="true" lb="get请求" rc="200" rm="OK" tn="功能覆盖 1-1" dt="text" by="822" sby="1046" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+</testResults>

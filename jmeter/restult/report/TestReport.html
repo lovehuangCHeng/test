@@ -1,0 +1,507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Load Test Results</title>
+<style type="text/css">
+				body {
+					font:normal 68% verdana,arial,helvetica;
+					color:#000000;
+				}
+				table tr td, table tr th {
+					font-size: 68%;
+				}
+				table.details tr th{
+				    color: #ffffff;
+					font-weight: bold;
+					text-align:center;
+					background:#2674a6;
+					white-space: nowrap;
+				}
+				table.details tr td{
+					background:#eeeee0;
+					white-space: nowrap;
+				}
+				h1 {
+					margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+				}
+				h2 {
+					margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica
+				}
+				h3 {
+					margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+				}
+				.Failure {
+					font-weight:bold; color:red;
+				}
+				
+	
+				img
+				{
+				  border-width: 0px;
+				}
+				
+				.expand_link
+				{
+				   position=absolute;
+				   right: 0px;
+				   width: 27px;
+				   top: 1px;
+				   height: 27px;
+				}
+				
+				.page_details
+				{
+				   display: none;
+				}
+                                
+                                .page_details_expanded
+                                {
+                                    display: block;
+                                    display/* hide this definition from  IE5/6 */: table-row;
+                                }
+
+
+			</style>
+<script language="JavaScript">
+                           function expand(details_id)
+			   {
+			      
+			      document.getElementById(details_id).className = "page_details_expanded";
+			   }
+			   
+			   function collapse(details_id)
+			   {
+			      
+			      document.getElementById(details_id).className = "page_details";
+			   }
+			   
+			   function change(details_id)
+			   {
+			      if(document.getElementById(details_id+"_image").src.match("expand"))
+			      {
+			         document.getElementById(details_id+"_image").src = "collapse.png";
+			         expand(details_id);
+			      }
+			      else
+			      {
+			         document.getElementById(details_id+"_image").src = "expand.png";
+			         collapse(details_id);
+			      } 
+                           }
+			</script>
+</head>
+<body>
+<h1>Load Test Results</h1>
+<table width="100%">
+<tr>
+<td align="left">Date report: 2019/07/08 10:34</td><td align="right">Designed for use with <a href="http://jmeter.apache.org/">JMeter</a> and <a href="http://ant.apache.org">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>Summary</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th># Samples</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th>
+</tr>
+<tr valign="top" class="Failure">
+<td align="center">40</td><td align="center">12</td><td align="center">70.00%</td><td align="center">184 ms</td><td align="center">20 ms</td><td align="center">1684 ms</td>
+</tr>
+</table>
+<hr align="center" width="95%" size="1">
+<h2>Pages</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>URL</th><th># Samples</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td>HTTP获取token</td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">546 ms</td><td align="right">207 ms</td><td align="right">886 ms</td><td align="center"><a href="javascript:change('page_details_1')"><img alt="expand/collapse" src="expand.png" id="page_details_1_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_1">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "HTTP获取token"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">1</td><td align="right">886</td><td align="right">1612</td><td align="center">true</td>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">2</td><td align="right">207</td><td align="right">1612</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>获取管理区</td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">96 ms</td><td align="right">63 ms</td><td align="right">128 ms</td><td align="center"><a href="javascript:change('page_details_2')"><img alt="expand/collapse" src="expand.png" id="page_details_2_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_2">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "获取管理区"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">1</td><td align="right">128</td><td align="right">1151</td><td align="center">true</td>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">2</td><td align="right">63</td><td align="right">1151</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>获取楼宇</td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">74 ms</td><td align="right">57 ms</td><td align="right">92 ms</td><td align="center"><a href="javascript:change('page_details_3')"><img alt="expand/collapse" src="expand.png" id="page_details_3_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_3">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "获取楼宇"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">1</td><td align="right">92</td><td align="right">1345</td><td align="center">true</td>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">2</td><td align="right">57</td><td align="right">1345</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>获取房间</td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">59 ms</td><td align="right">51 ms</td><td align="right">67 ms</td><td align="center"><a href="javascript:change('page_details_4')"><img alt="expand/collapse" src="expand.png" id="page_details_4_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_4">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "获取房间"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">1</td><td align="right">67</td><td align="right">1530</td><td align="center">true</td>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">2</td><td align="right">51</td><td align="right">1530</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#HTTP%E8%8E%B7%E5%8F%96%E4%BB%98%E6%AC%BE%E6%96%B9%E5%BC%8F">HTTP获取付款方式</a></td><td align="center">2</td><td align="center">2</td><td align="right">0.00%</td><td align="right">168 ms</td><td align="right">63 ms</td><td align="right">274 ms</td><td align="center"><a href="javascript:change('page_details_5')"><img alt="expand/collapse" src="expand.png" id="page_details_5_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_5">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "HTTP获取付款方式"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">1</td><td align="right">274</td><td align="right">1748</td><td align="center">false</td>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">2</td><td align="right">63</td><td align="right">1748</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>根据房间获取客户ID</td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">182 ms</td><td align="right">80 ms</td><td align="right">284 ms</td><td align="center"><a href="javascript:change('page_details_6')"><img alt="expand/collapse" src="expand.png" id="page_details_6_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_6">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "根据房间获取客户ID"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">1</td><td align="right">284</td><td align="right">876</td><td align="center">true</td>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">2</td><td align="right">80</td><td align="right">876</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>HTTP获取客户的账单</td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">154 ms</td><td align="right">85 ms</td><td align="right">224 ms</td><td align="center"><a href="javascript:change('page_details_7')"><img alt="expand/collapse" src="expand.png" id="page_details_7_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_7">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "HTTP获取客户的账单"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">1</td><td align="right">224</td><td align="right">16809</td><td align="center">true</td>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">2</td><td align="right">85</td><td align="right">16809</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>HTTP缴费本地</td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">916 ms</td><td align="right">148 ms</td><td align="right">1684 ms</td><td align="center"><a href="javascript:change('page_details_8')"><img alt="expand/collapse" src="expand.png" id="page_details_8_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_8">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "HTTP缴费本地"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">1</td><td align="right">1684</td><td align="right">844</td><td align="center">true</td>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">2</td><td align="right">148</td><td align="right">844</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#HTTP%E6%9F%A5%E8%AF%A2%E5%8F%AF%E7%94%A8%E7%A7%AF%E5%88%86%E5%8F%8A%E5%8F%AF%E6%8A%B5%E7%94%A8%E9%87%91%E9%A2%9D">HTTP查询可用积分及可抵用金额</a></td><td align="center">2</td><td align="center">2</td><td align="right">0.00%</td><td align="right">96 ms</td><td align="right">65 ms</td><td align="right">128 ms</td><td align="center"><a href="javascript:change('page_details_9')"><img alt="expand/collapse" src="expand.png" id="page_details_9_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_9">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "HTTP查询可用积分及可抵用金额"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">1</td><td align="right">128</td><td align="right">1748</td><td align="center">false</td>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">2</td><td align="right">65</td><td align="right">1748</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#HTTP%E7%A7%AF%E5%88%86%E6%9F%A5%E8%AF%A2">HTTP积分查询</a></td><td align="center">2</td><td align="center">2</td><td align="right">0.00%</td><td align="right">98 ms</td><td align="right">96 ms</td><td align="right">100 ms</td><td align="center"><a href="javascript:change('page_details_10')"><img alt="expand/collapse" src="expand.png" id="page_details_10_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_10">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "HTTP积分查询"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">1</td><td align="right">100</td><td align="right">1748</td><td align="center">false</td>
+</tr>
+<tr>
+<td>物业app收费接口测试 1-1</td><td align="center">2</td><td align="right">96</td><td align="right">1748</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>获取token</td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">708 ms</td><td align="right">164 ms</td><td align="right">1252 ms</td><td align="center"><a href="javascript:change('page_details_11')"><img alt="expand/collapse" src="expand.png" id="page_details_11_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_11">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "获取token"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">1</td><td align="right">1252</td><td align="right">1616</td><td align="center">true</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">2</td><td align="right">164</td><td align="right">1616</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#get%E8%AF%B7%E6%B1%82">get请求</a></td><td align="center">14</td><td align="center">2</td><td align="right">85.71%</td><td align="right">65 ms</td><td align="right">23 ms</td><td align="right">456 ms</td><td align="center"><a href="javascript:change('page_details_12')"><img alt="expand/collapse" src="expand.png" id="page_details_12_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_12">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "get请求"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">1</td><td align="right">456</td><td align="right">1144</td><td align="center">true</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">2</td><td align="right">43</td><td align="right">822</td><td align="center">true</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">3</td><td align="right">78</td><td align="right">822</td><td align="center">true</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">4</td><td align="right">70</td><td align="right">846</td><td align="center">false</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">5</td><td align="right">28</td><td align="right">1144</td><td align="center">true</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">6</td><td align="right">28</td><td align="right">822</td><td align="center">true</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">7</td><td align="right">26</td><td align="right">822</td><td align="center">true</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">8</td><td align="right">30</td><td align="right">1144</td><td align="center">true</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">9</td><td align="right">28</td><td align="right">822</td><td align="center">true</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">10</td><td align="right">25</td><td align="right">822</td><td align="center">true</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">11</td><td align="right">25</td><td align="right">846</td><td align="center">false</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">12</td><td align="right">26</td><td align="right">1144</td><td align="center">true</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">13</td><td align="right">26</td><td align="right">822</td><td align="center">true</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">14</td><td align="right">23</td><td align="right">822</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#post%E8%AF%B7%E6%B1%82">post请求</a></td><td align="center">4</td><td align="center">4</td><td align="right">0.00%</td><td align="right">66 ms</td><td align="right">20 ms</td><td align="right">135 ms</td><td align="center"><a href="javascript:change('page_details_13')"><img alt="expand/collapse" src="expand.png" id="page_details_13_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_13">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "post请求"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">1</td><td align="right">135</td><td align="right">885</td><td align="center">false</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">2</td><td align="right">77</td><td align="right">1054</td><td align="center">false</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">3</td><td align="right">30</td><td align="right">885</td><td align="center">false</td>
+</tr>
+<tr>
+<td>功能覆盖 1-1</td><td align="center">4</td><td align="right">20</td><td align="right">1054</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<hr align="center" width="95%" size="1">
+<h2>Failure Detail</h2>
+<h3>HTTP获取付款方式<a name="HTTP%E8%8E%B7%E5%8F%96%E4%BB%98%E6%AC%BE%E6%96%B9%E5%BC%8F"></a>
+</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>Non HTTP response code: java.net.SocketException - Non HTTP response message: Connection reset</td><td></td>
+</tr>
+<tr>
+<td>Non HTTP response code: java.net.SocketException - Non HTTP response message: Connection reset</td><td></td>
+</tr>
+</table>
+<h3>HTTP查询可用积分及可抵用金额<a name="HTTP%E6%9F%A5%E8%AF%A2%E5%8F%AF%E7%94%A8%E7%A7%AF%E5%88%86%E5%8F%8A%E5%8F%AF%E6%8A%B5%E7%94%A8%E9%87%91%E9%A2%9D"></a>
+</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>Non HTTP response code: java.net.SocketException - Non HTTP response message: Connection reset</td><td></td>
+</tr>
+<tr>
+<td>Non HTTP response code: java.net.SocketException - Non HTTP response message: Connection reset</td><td></td>
+</tr>
+</table>
+<h3>HTTP积分查询<a name="HTTP%E7%A7%AF%E5%88%86%E6%9F%A5%E8%AF%A2"></a>
+</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>Non HTTP response code: java.net.SocketException - Non HTTP response message: Connection reset</td><td></td>
+</tr>
+<tr>
+<td>Non HTTP response code: java.net.SocketException - Non HTTP response message: Connection reset</td><td></td>
+</tr>
+</table>
+<h3>get请求<a name="get%E8%AF%B7%E6%B1%82"></a>
+</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>404 - Not Found</td><td></td>
+</tr>
+<tr>
+<td>404 - Not Found</td><td></td>
+</tr>
+</table>
+<h3>post请求<a name="post%E8%AF%B7%E6%B1%82"></a>
+</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>409 - Conflict</td><td></td>
+</tr>
+<tr>
+<td>405 - Method Not Allowed</td><td></td>
+</tr>
+<tr>
+<td>409 - Conflict</td><td></td>
+</tr>
+<tr>
+<td>405 - Method Not Allowed</td><td></td>
+</tr>
+</table>
+</body>
+</html>

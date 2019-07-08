@@ -1,0 +1,7 @@
+/api/v1.0/open/BasicData/GetRegion	get	
+/api/v1.0/open/BasicData/GetBuilding	get	regionId=2366
+/api/v1.0/open/BasicData/GetHouse	get	buildingId=8895
+/api/v1.0/open/Authentication	post	{"HouseId":2043 ,"CustomerName":"ÖÓ»ª","Voucher":"1236511123"}
+/api/v1.0/open/Bills	get	customerId=0
+/api/v1.0/open/BasicData/GetPaidMethod	post	
+
